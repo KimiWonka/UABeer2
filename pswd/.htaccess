@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "UABeer"
-AuthUserFile /home/TDIW/tdiw-a10/public_html/.htpasswd
-Require valid-user
-
