@@ -1,7 +1,7 @@
 <?php
 function setRegistre($connexio){
     try{
-        $sql = "INSERT INTO Registre (nom, correu, contrasenya, direccio, poblacio, CP, edat) values(:nom, :correu, :contrasenya, :direccio, :poblacio, :CP, :edat)";
+        $sql = "INSERT INTO client (`nom`, correu, contrasenya, direccio, poblacio, CP, edat, DNI) values(:nom, :correu, :contrasenya, :direccio, :poblacio, :CP, :edat, :DNI)";
 
         $consulta=$connexio->prepare($sql);
         $consulta->bindParam(":nom",$_POST['nom']);
@@ -10,6 +10,7 @@ function setRegistre($connexio){
         $consulta->bindParam(":poblacio",$_POST['poblacio']);
         $consulta->bindParam(":CP",$_POST['CP']);
         $consulta->bindParam(":edat",$_POST['edat']);
+        $consulta->bindParam(":DNI",$_POST['DNI']);
 
         $password=$_POST['contrasenya'];
         $pass_qo=password_hash($password, PASSWORD_DEFAULT);

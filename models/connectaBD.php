@@ -3,9 +3,10 @@
 function getConn()
 {
     $servidor='localhost';
-    $usuari='tdiw-a10';
-    $clau='Lamisma10';
+    $usuari='root';
+    $clau='root';
     $dbname='tdiw-a10';
+
     try{
         $connexio = new PDO("mysql:host=$servidor;dbname=$dbname;charset=UTF8",$usuari,$clau);
         $connexio->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);

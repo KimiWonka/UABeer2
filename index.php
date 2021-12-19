@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $action = $_GET['action'] ?? null;
 
 switch ($action){

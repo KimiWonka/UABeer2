@@ -1,0 +1,26 @@
+
+.container{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 20px;
+    font-family:sans-serif;
+    font-weight: bold;
+
+}
+.container div{
+
+    margin: 5% 60%;
+
+}
+h3{
+    font-size: 40px;
+}
+
+h5{
+    float: left;
+    padding: 5px;
+}
+
+h4{
+    font-size:50px;
+}
